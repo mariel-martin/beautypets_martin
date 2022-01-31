@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html>    
+<head>
+    <title>BeautyPets</title> 
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta name="keywords" content="Petshop, marketplace">
+    <meta name="description" content="Web to buy things for pets">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+    <div class="container_contacto">
+        <header> <!-- encabezado de la pagina-->
+            <section class="header__principal">
+                <div class="header__principal__logo">
+                    <img class="nav_item" src="../imagenes/nav.png" alt="nav">   
+                    <h1 class="titulo_logo">BeautyPets</h1>
+                    <img class="carrito_de_compras" src="../imagenes/carrito-de-compras.png" alt="carrito-de-compras">     
+                </div>
+                <div class="header__principal__buscador">
+                    <input type="text">  <!-- el css hay que mejorarlo con flex-->
+                </div>
+        
+                <div class="header__principal__contacto">
+                    <p>
+                        (011) 4765-1299
+                    </p>
+                    <p>
+                        +54 9 1142788451
+                    </p>
+                </div>
+            </section> 
+        
+            <section class="header__secundario">
+                <nav> <!-- menu -->
+                    <ul class="header__secundario__nav">
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="informacion.html">Informacion</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <div class="titulo_mobile_contacto">
+            <a href="../index.html">Contacto</a>
+        </div>
+
+        <section> 
+            <section class="main__imagen"> <!-- imagen -->
+            </section>
+
+            <section class="main__contacto">
+                <h2 class="main__contacto__titulo">Realizá tu pedido!</h2>
+                <div class="main__contacto__contacto">
+                    <p>Teléfono: (011) 4765-1299 </p>
+                    <p>Whatsapp: +5491142788451</p>
+                    <p class="main__contacto__contacto__mail">También podes enviarnos un mail a: beautypets@gmail.com</p> 
+                </div>
+        
+                <div class="main__contacto__subtitulo">
+                    <h3>Enviá tu consulta por este medio y te contactaremos a la brevedad! Gracias.</h3>
+                </div>
+
+                <div id="formulario">
+                    <form>
+                        <label for="nombreyapellido">Nombre y Apellido:</label> <br>
+                        <input placeholder="Nombre y Apellido" type="text" name="nombreyapellido"/>  <br><br>
+            
+                        <label for="Telefono">Teléfono:</label> <br>
+                        <input placeholder="Telefono" type="number" name="Telefono"/>  <br><br>
+            
+                        <label for="Mail">Mail:</label> <br>
+                        <input placeholder="Mail" type="email" name="Mail"/>  <br><br>
+                        
+                        <label for="Consulta">Consulta:</label> <br>
+                        <textarea placeholder="Cual es tu consulta?" name="Consulta" id="Consulta" cols="30" rows="10"></textarea> <br><br>
+                    
+                        <input type="submit" value="Enviar ahora"/>         
+                    </form>
+                </div>
+            </section>
+        </section>
+        
+        <footer>
+            <ul class="footer__nav">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li> 
+                <li>
+                    <a href="informacion.html">Informacion</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <img class="whatsapp_logo" src="../imagenes/whatsapp-logo.png" alt="whatsapp_logo">
+        </footer>
+    </div>    
+</body>
+</html>
