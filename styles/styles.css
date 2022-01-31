@@ -95,6 +95,20 @@ header {
     margin-right: 10%;
 }
 
+.header__secundario__nav li a {
+    background-color: rgb(206, 137, 206);
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 8px;
+    transition: .5s;
+}
+
+.header__secundario__nav li a:hover {
+    background-color: violet;
+}
+
+
 .main {
     width: 100%;
     grid-area: main;
@@ -147,7 +161,26 @@ header {
     font-family: "Arial";
     text-align: center;
     justify-content: center;
+    animation-duration: 2s;
+    animation-name: parpadear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes parpadear {
+        0% {
+          font-size: 20px;
+          color: rgb(156, 52, 156)
+        }
+        100% {
+          font-size: 24px;
+          color: rgb(204, 28, 180);
+          background-color: rgb(224, 188, 219);
+        }
+     }
+
+
+
+
 
 .main__destacados__destacado {
     margin: 10px;
@@ -174,18 +207,31 @@ footer {
     height: 40px; 
     grid-area: footer;
     text-align: center;
+    border-top: 3px solid #b31390;
+    padding-top: 15px;
 }
 
 .footer__nav { 
     font-size: 15px;
     color: rgb(172, 70, 150);
-    padding-top: 5px;
-    border-top: 3px solid #b31390;
 }
 
-.footer__nav li{
+.footer__nav li {
     display: inline;
     margin-right: 10%;
+}
+
+.footer__nav li a {
+    background-color: rgb(206, 137, 206);
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 6px;
+    transition: .5s;
+}
+
+.footer__nav li a:hover {
+    background-color: violet;
 }
 
 .titulo_mobile {
@@ -268,6 +314,11 @@ footer {
     height: 100%;
     margin: auto;
     margin-top: 10px;
+}
+
+
+#formulario .enviar:hover {
+    background-color: rgb(206, 154, 183);
 }
 
 
@@ -496,8 +547,6 @@ footer {
 }
 
 
-
-
 /* SERVICIOS */
 
 .titulo_mobile_servicios {
@@ -695,10 +744,5 @@ footer {
     .main__contacto {
         width: 100%;
     }
-   
-
-
-
-
-
     }
+
