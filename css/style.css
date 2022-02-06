@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #dfb6d9;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  width: 100%;
+  grid-area: header; }
+
+.container {
+  display: grid;
+  grid-template-rows: 150px 600px 40px;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header__principal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+  background-image: url("../imagenes/fondo.jpeg");
+  border-bottom: 3px solid #b31390; }
+  .header__principal .header__principal__logo {
+    height: 100%;
+    flex-grow: 1;
+    display: flex; }
+    .header__principal .header__principal__logo h1 {
+      flex-grow: 1;
+      font-size: 70px;
+      font-weight: bold;
+      font-style: italic;
+      color: #ac4696;
+      padding: 10px;
+      text-align: center; }
+  .header__principal .header__principal__buscador {
+    height: 100%;
+    flex-grow: 2;
+    display: flex;
+    align-items: center; }
+    .header__principal .header__principal__buscador input {
+      justify-items: center;
+      width: 100%; }
+  .header__principal .header__principal__contacto {
+    height: 100%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.nav_item {
+  display: none; }
+
+.carrito_de_compras {
+  display: none; }
+
+.header__secundario {
+  width: 100%;
+  height: 30%; }
+  .header__secundario .header__secundario__nav {
+    font-size: 15px;
+    color: #ac4696;
+    padding: 10px;
+    border-bottom: 3px solid #b31390;
+    text-align: center; }
+    .header__secundario .header__secundario__nav li {
+      display: inline;
+      padding: 15px;
+      margin-right: 10%; }
+      .header__secundario .header__secundario__nav li a {
+        background-color: #ce89ce;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 8px;
+        transition: .5s; }
+        .header__secundario .header__secundario__nav li a:hover {
+          background-color: violet; }
+
+.main {
+  width: 100%;
+  grid-area: main; }
+
+.slider {
+  display: none; }
+
+.main__productos {
+  width: 100%;
+  border-bottom: 3px solid #b31390;
+  padding: 5px;
+  display: flex;
+  justify-content: center; }
+  .main__productos .main__productos__producto {
+    margin: 10px;
+    width: 20%;
+    display: inline-block;
+    margin-right: 10px; }
+    .main__productos .main__productos__producto img {
+      height: 200px;
+      background-color: white;
+      object-fit: contain; }
+    .main__productos .main__productos__producto p {
+      font-size: 15px;
+      font-weight: bold;
+      color: #c237c2; }
+
+.main__destacados {
+  width: 100%;
+  margin-top: 3%;
+  display: flex; }
+  .main__destacados .main__destacados__destacado1 {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Arial";
+    text-align: center;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-name: parpadear;
+    animation-iteration-count: infinite; }
+  .main__destacados .main__destacados__destacado {
+    margin: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    flex-grow: 1; }
+    .main__destacados .main__destacados__destacado img {
+      height: 200px;
+      background-color: white;
+      width: 200px;
+      object-fit: contain; }
+    .main__destacados .main__destacados__destacado p {
+      font-size: 15px;
+      font-weight: bold;
+      color: #c237c2; }
+
+@keyframes parpadear {
+  0% {
+    font-size: 20px;
+    color: #9c349c; }
+  100% {
+    font-size: 24px;
+    color: #cc1cb4;
+    background-color: #e0bcdb; } }
+
+footer {
+  width: 100%;
+  height: 40px;
+  grid-area: footer;
+  text-align: center;
+  border-top: 3px solid #b31390;
+  padding-top: 15px; }
+  footer .footer__nav {
+    font-size: 15px;
+    color: #ac4696; }
+    footer .footer__nav li {
+      display: inline;
+      margin-right: 10%; }
+      footer .footer__nav li a {
+        background-color: #ce89ce;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 6px;
+        transition: .5s; }
+        footer .footer__nav li a:hover {
+          background-color: violet; }
+
+.titulo_mobile {
+  display: none; }
+
+.whatsapp_logo {
+  display: none; }
