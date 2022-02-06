@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: rgb(226, 171, 219);
+    background-color: rgb(223, 182, 217);
+    font-family: Arial, Helvetica, sans-serif;
     }
 
 header {
@@ -457,7 +458,6 @@ footer {
     display: flex;
 }
 
-
 .checkbox_container {
     padding: 2%;
     flex-grow: 2;
@@ -488,6 +488,7 @@ footer {
 .productos__perros h2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: rgb(240, 93, 240);        
 }
 
 .productos__perros__articulo {
@@ -507,11 +508,13 @@ footer {
     margin-top: 10px;
     margin-bottom: 30px;
     min-height: 45px;
+    color: rgb(240, 93, 240);        
 }
 
 .productos__perros__articulo p {
     margin-top: 10px;
     margin-bottom: 30px;
+    color: rgb(240, 93, 240);        
 }
 
 .productos__gatos {
@@ -522,18 +525,19 @@ footer {
 .articulos__gatos {
     display: flex;
     justify-content: space-between;
-
 }
 
 .productos__gatos h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: rgb(240, 93, 240);        
 }
 
 .productos__gatos__articulo {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 15px
+    padding: 15px;
+    color: rgb(240, 93, 240);        
 }
 
 .productos__gatos__articulo h3 {
@@ -544,6 +548,8 @@ footer {
 .productos__gatos__articulo p {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: rgb(240, 93, 240);        
+
 }
 
 
@@ -647,15 +653,49 @@ footer {
         text-align: center;
         margin-top: 30px;
     }
+
+    .slider h1 {
+        color: rgb(240, 93, 240);
+        margin-top: 10px;
+    }
+
+    .slider h1 a {
+        background-color: rgb(214, 189, 214);
+        border: 2px solid rgb(219, 79, 219);
+        color: rgb(240, 93, 240);
+        text-decoration: none;
+        padding: 5px;
+        animation-duration: 2s;
+        animation-name: cambiocolor;
+        animation-iteration-count: infinite;
+    }
+     @keyframes cambiocolor {
+        0% {
+            color: rgb(240, 93, 240);
+            background-color: rgb(214, 189, 214);
+        }
+        50% {
+            color: rgb(243, 235, 243);
+            background-color: rgb(201, 95, 201);
+        }
+        100% {
+            color: rgb(240, 93, 240);
+            background-color: rgb(214, 189, 214);
+        }
+     }
+
     .main__productos {
         display: none;
     }
+
     .main__destacados__destacado1 {
         display: none;
     }
+
     .footer__nav {
         display: none;
     }
+
     .whatsapp_logo {
         display: block;
         width: 40px;
@@ -665,10 +705,13 @@ footer {
     .titulo_mobile {
         text-align: left;
         display: block;
+        color: rgb(240, 93, 240);
+
     }
     footer {
         text-align: right;
     }
+
     .container {
         grid-template-rows: 150px 720px 40px;
     }
@@ -682,6 +725,30 @@ footer {
     .titulo_mobile_productos {
         display: block;
     }
+    .titulo_mobile_productos h2 a {
+        color: rgb(240, 93, 240);        
+        text-decoration: none;
+        background-color: white;
+        border: 3px solid violet;
+        animation-duration: 2s;
+        animation-name: cambio-color;
+        animation-iteration-count: infinite;
+    }
+     @keyframes cambio-color {
+        0% {
+            color: rgb(240, 93, 240);
+            background-color: rgb(214, 189, 214);
+        }
+        50% {
+            color: rgb(243, 235, 243);
+            background-color: rgb(201, 95, 201);
+        }
+        100% {
+            color: rgb(240, 93, 240);
+            background-color: rgb(214, 189, 214);
+        }
+     }
+
     .productos__perros__articulo {
         padding: 5px;
     }
@@ -689,7 +756,7 @@ footer {
         padding: 5px;
     }
     .container_producto {
-        grid-template-rows: 150px 900px 40px
+        grid-template-rows: 150px 900px 40px;
     }
 /* informacion */
    .informacion__sucursales {
