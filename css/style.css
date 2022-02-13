@@ -17,15 +17,15 @@ header {
 
 .header__principal {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 70%;
+  justify-content: space-between;
   background-image: url("../imagenes/fondo.jpeg");
   border-bottom: 3px solid #b31390; }
   .header__principal .header__principal__logo {
-    height: 100%;
+    display: flex;
     flex-grow: 1;
-    display: flex; }
+    height: 100%; }
     .header__principal .header__principal__logo h1 {
       flex-grow: 1;
       font-size: 70px;
@@ -35,26 +35,36 @@ header {
       padding: 10px;
       text-align: center; }
   .header__principal .header__principal__buscador {
-    height: 100%;
-    flex-grow: 2;
     display: flex;
+    flex-grow: 2;
+    height: 100%;
     align-items: center; }
     .header__principal .header__principal__buscador input {
       justify-items: center;
       width: 100%; }
   .header__principal .header__principal__contacto {
+    display: flex;
+    flex-grow: 1;
     height: 100%;
     text-align: center;
-    flex-grow: 1;
-    display: flex;
     flex-direction: column;
     justify-content: center; }
 
-.nav_item {
+.nav_item, .carrito_de_compras {
   display: none; }
 
 .carrito_de_compras {
-  display: none; }
+  background-color: #dfb6d9; }
+
+.btn {
+  background-color: #dfb6d9;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 8px;
+  transition: .5s; }
+  .btn:hover {
+    background-color: #b31390; }
 
 .header__secundario {
   width: 100%;
@@ -69,15 +79,6 @@ header {
       display: inline;
       padding: 15px;
       margin-right: 10%; }
-      .header__secundario .header__secundario__nav li a {
-        background-color: #ce89ce;
-        color: white;
-        text-decoration: none;
-        border: 2px solid white;
-        padding: 8px;
-        transition: .5s; }
-        .header__secundario .header__secundario__nav li a:hover {
-          background-color: violet; }
 
 .main {
   width: 100%;
@@ -87,10 +88,11 @@ header {
   display: none; }
 
 .main__productos {
+  display: flex;
   width: 100%;
+  height: auto;
   border-bottom: 3px solid #b31390;
   padding: 5px;
-  display: flex;
   justify-content: center; }
   .main__productos .main__productos__producto {
     margin: 10px;
@@ -107,21 +109,23 @@ header {
       color: #c237c2; }
 
 .main__destacados {
-  width: 100%;
   margin-top: 3%;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  height: auto; }
   .main__destacados .main__destacados__destacado1 {
     margin: 10px;
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
+    height: auto;
+    animation-duration: 2s;
+    animation-name: parpadear;
+    animation-iteration-count: infinite;
     align-items: center;
     font-size: 24px;
     font-family: "Arial";
     text-align: center;
-    justify-content: center;
-    animation-duration: 2s;
-    animation-name: parpadear;
-    animation-iteration-count: infinite; }
+    justify-content: center; }
   .main__destacados .main__destacados__destacado {
     margin: 10px;
     display: inline-block;
@@ -140,18 +144,18 @@ header {
 @keyframes parpadear {
   0% {
     font-size: 20px;
-    color: #9c349c; }
+    color: #ac4696; }
   100% {
     font-size: 24px;
-    color: #cc1cb4;
-    background-color: #e0bcdb; } }
+    color: #c237c2;
+    background-color: #dfb6d9; } }
 
 footer {
   width: 100%;
   height: 40px;
   grid-area: footer;
   text-align: center;
-  border-top: 3px solid #b31390;
+  border-top: 3px solid #c237c2;
   padding-top: 15px; }
   footer .footer__nav {
     font-size: 15px;
@@ -159,15 +163,6 @@ footer {
     footer .footer__nav li {
       display: inline;
       margin-right: 10%; }
-      footer .footer__nav li a {
-        background-color: #ce89ce;
-        color: white;
-        text-decoration: none;
-        border: 2px solid white;
-        padding: 6px;
-        transition: .5s; }
-        footer .footer__nav li a:hover {
-          background-color: violet; }
 
 .titulo_mobile {
   display: none; }
