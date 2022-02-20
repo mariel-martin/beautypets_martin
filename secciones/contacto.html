@@ -1,120 +1,153 @@
-<!DOCTYPE html> 
-<html>    
+<!DOCTYPE html>
+<html>
 <head>
-    <title>BeautyPets-Contacto</title> 
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>BeautyPets-Contacto</title>
     <meta name="keywords" content="Contacto, pedidos">
     <meta name="description" content="Te dejamos nuestro contacto para que puedas realizar tu pedido">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container_contacto">
-        <header> <!-- encabezado de la pagina-->
-            <section class="header__principal">
-                <div class="header__principal__logo">
-                    <img class="nav_item" src="../imagenes/nav.png" alt="nav">   
-                    <h1 class="titulo_logo">BeautyPets</h1>
-                    <img class="carrito_de_compras" src="../imagenes/carrito-de-compras.png" alt="carrito-de-compras">     
-                </div>
-                <div class="header__principal__buscador">
-                    <input type="text">  <!-- el css hay que mejorarlo con flex-->
-                </div>
-        
-                <div class="header__principal__contacto">
-                    <p>
-                        (011) 4765-1299
-                    </p>
-                    <p>
-                        +54 9 1142788451
-                    </p>
-                </div>
-            </section> 
-        
-            <section class="header__secundario">
-                <nav> <!-- menu -->
+<div class="container-fluid main__container">
+    <!-- region header -->
+    <header>
+        <section class="header__principal">
+            <div class="container header__container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="header__principal__logo col-12 col-md-4 row">
+                        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <h1 class="titulo_logo col">BeautyPets</h1>
+                        <button class="navbar-toggler col-2" type="button" >
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                    <div class="header__principal__buscador col-12 col-md-4">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="header__principal__contacto col-md-4">
+                        <p>
+                            (011) 4765-1299
+                        </p>
+                        <p>
+                            +54 9 1142788451
+                        </p>
+                    </div>
+
+                </nav>
+            </div>
+        </section>
+
+        <section class="header__secundario collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <nav>
                     <ul class="header__secundario__nav">
                         <li>
-                            <a href="../index.html">Inicio</a>
+                            <a class="btn" href="../index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="informacion.html">Informacion</a>
+                            <a class="btn" href="./informacion.html">Informacion</a>
                         </li>
                         <li>
-                            <a href="productos.html">Productos</a>
+                            <a class="btn" href="./productos.html">Productos</a>
                         </li>
                         <li>
-                            <a href="servicios.html">Servicios</a>
+                            <a class="btn" href="./servicios.html">Servicios</a>
                         </li>
                         <li>
-                            <a href="contacto.html">Contacto</a>
+                            <a class="btn" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </nav>
-            </section>
-        </header>
-
-        <div class="titulo_mobile_contacto">
-            <a href="../index.html">Contacto</a>
-        </div>
-
-        <section> 
-            <section class="main__imagen"> <!-- imagen -->
-            </section>
-
-            <section class="main__contacto">
-                <h2 class="main__contacto__titulo">Realizá tu pedido!</h2>
-                <div class="main__contacto__contacto">
-                    <p>Teléfono: (011) 4765-1299 </p>
-                    <p>Whatsapp: +5491142788451</p>
-                    <p class="main__contacto__contacto__mail">También podes enviarnos un mail a: beautypets@gmail.com</p> 
-                </div>
-        
-                <div class="main__contacto__subtitulo">
-                    <h3>Enviá tu consulta por este medio y te contactaremos a la brevedad! Gracias.</h3>
-                </div>
-
-                <div id="formulario">
-                    <form>
-                        <label for="nombreyapellido">Nombre y Apellido:</label> <br>
-                        <input placeholder="Nombre y Apellido" type="text" name="nombreyapellido"/>  <br><br>
-            
-                        <label for="Telefono">Teléfono:</label> <br>
-                        <input placeholder="Telefono" type="number" name="Telefono"/>  <br><br>
-            
-                        <label for="Mail">Mail:</label> <br>
-                        <input placeholder="Mail" type="email" name="Mail"/>  <br><br>
-                        
-                        <label for="Consulta">Consulta:</label> <br>
-                        <textarea placeholder="Cual es tu consulta?" name="Consulta" id="Consulta" cols="30" rows="10"></textarea> <br><br>
-                    
-                        <input class="enviar" type="submit" value="Enviar ahora"/>         
-                    </form>
-                </div>
-            </section>
+            </div>
         </section>
-        
-        <footer>
+    </header>
+    <!-- endregion -->
+
+    <section class="main container">
+        <section class="main__imagen"> <!-- imagen -->
+        </section>
+
+        <section class="main__contacto">
+            <div class="row">
+                <div class="col-12 col-lg-6 main__contacto__informacion">
+                    <h2 class="main__contacto__titulo">Realizá tu pedido!</h2>
+                    <div class="main__contacto__contacto">
+                        <p>Teléfono: (011) 4765-1299 </p>
+                        <p>Whatsapp: +5491142788451</p>
+                        <p class="main__contacto__contacto__mail">También podes enviarnos un mail a: beautypets@gmail.com</p>
+                    </div>
+
+                    <div class="main__contacto__subtitulo">
+                        <h3>Enviá tu consulta por este medio y te contactaremos a la brevedad! Gracias.</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-6">
+                    <div id="formulario">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombreapellido" class="form-label">Nombre y Apellido:</label>
+                                <input type="email" class="form-control" id="nombreapellido" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Telefono:</label>
+                                <input type="email" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="consulta" class="form-label">Consulta:</label>
+                                <input type="email" class="form-control" id="consulta" aria-describedby="emailHelp">
+                            </div>
+
+                            <input class="btn btn-success fr" type="submit" value="Enviar ahora"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- region footer -->
+    <footer class="container-fluid">
+        <div class="container">
             <ul class="footer__nav">
                 <li>
-                    <a href="../index.html">Inicio</a>
-                </li> 
-                <li>
-                    <a href="informacion.html">Informacion</a>
+                    <a class="btn" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="productos.html">Productos</a>
+                    <a class="btn" href="./informacion.html">Informacion</a>
                 </li>
                 <li>
-                    <a href="servicios.html">Servicios</a>
+                    <a class="btn" href="./productos.html">Productos</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="btn" href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a class="btn" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
-            <img class="whatsapp_logo" src="../imagenes/whatsapp-logo.png" alt="whatsapp_logo">
-        </footer>
-    </div>    
+            <img class="whatsapp_logo" src="./imagenes/whatsapp-logo.png" alt="whatsapp_logo">
+        </div>
+    </footer>
+    <!-- endregion footer -->
+</div>
 </body>
 </html>
