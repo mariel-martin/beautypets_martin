@@ -67,8 +67,8 @@ header {
         flex-direction: column;
         justify-content: center;
         margin-top: 25px;
+        color: #753867;
     }
-
 
 .nav_item {
     display: none;
@@ -97,7 +97,6 @@ header {
     background-color: #fcfcfc;
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 25px;
-
     width: 100%;
     height: 30%;
 
@@ -173,8 +172,11 @@ header {
 
 .main__destacados__title {
     font-size: 18px;
+    color: #814a75;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
-
 
 @keyframes parpadear {
         0% {
@@ -188,7 +190,6 @@ header {
         }
      }
 
-
 footer {
     width: 100%;
     text-align: center;
@@ -198,7 +199,6 @@ footer {
     box-shadow: 0px 0px 15px #f4f4f4;
 
     .footer__nav {
-
         font-size: 15px;
         color: #ac4696;
         padding: 10px;
@@ -215,11 +215,9 @@ footer {
     }
 }
 
-
 .whatsapp_logo {
     display: none;
 }
-
 
 .slider {
     display: none;
@@ -246,10 +244,12 @@ footer {
     display: none;
 }
 
-/* CONTACTOS */
+
+/*********** CONTACTOS ************/
 
 .main__contacto {
     margin-top: 10px;
+    color: #753867;
 }
 
 .main__imagen {
@@ -259,9 +259,9 @@ footer {
     background-size: cover;
 }
 
-
 .main__contacto__informacion {
     padding-top: 50px;
+    
     .main__contacto__titulo {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -294,23 +294,30 @@ footer {
     }
 }
 
-
-
 #formulario {
     width: 100%;
     height: 100%;
     margin-top: 10px;
     margin-bottom: 65px;
+    
     .enviar:hover {
         background-color: rgb(206, 154, 183);
     }
 }
 
-/* INFORMACION */
+
+/******** INFORMACION ***********/
+
+.titulo__informacion {
+    color: #753867;
+    font-weight: bold;
+}
 
 .informacion__sucursales {
     padding: 10px;
     text-align: left;
+    color: #753867;
+    
 
     .informacion__gba {
         padding: 5px;
@@ -322,7 +329,6 @@ footer {
         p {
             margin-bottom: 25px;
         }
-
     }
 
     .informacion__caba {
@@ -330,6 +336,7 @@ footer {
         p {
             margin-bottom: 25px;
         }
+        
         h3 {
             font-weight: bolder;
             margin-bottom: 10px;
@@ -341,12 +348,16 @@ footer {
 
 .informacion__pago {
     margin-bottom: 2%;
+    color: #753867;
+    
     .informacion__pago__titulo h2 {
         font-weight: bolder;
         margin-bottom: 10px;
     }
+    
     .informacion__pago__subtitulos {
         padding: 5px;
+        color: #753867;
         .informacion__pago__efectivo {
             h3 {
             margin-bottom: 2%;
@@ -361,7 +372,6 @@ footer {
         }
         .informacion__pago__mp {
             margin-bottom: 2%;
-
             h3 {
                 margin-bottom: 2%;
             }
@@ -369,7 +379,8 @@ footer {
     }
 }
 
-/* PRODUCTOS */
+
+/******** PRODUCTOS ***********/
 
 .titulo_mobile_productos {
     display: none;
@@ -378,6 +389,7 @@ footer {
 .checkbox_container {
     padding: 2%;
     margin-top: 35px;
+    color: #753867;
 }
 
 .checkbox {
@@ -392,6 +404,8 @@ footer {
 }
 
 .productos__perros {
+    color: #753867;
+    font-weight: bold;
     margin-bottom: 30px;
     h2 {
         margin-top: 10px;
@@ -403,35 +417,47 @@ footer {
     }
 }
 
-/* SERVICIOS */
+.productos__gatos {
+    color: #753867;
+    font-weight: bold;
+}
+
+
+/********* SERVICIOS ********/
 
 .servicios__main__titulo {
     h2{
         margin-top: 10px;
         margin-bottom: 10px;
+        color: #753867;
+        font-weight: bold;
     }
 
     h3{
         margin-top: 10px;
         margin-bottom: 10px;
+        color: #753867;
     }
 }
 
 .servicios__lista {
     padding: revert;
+    color: #753867;
 }
 
-.servicios__main__titulo2
-{
+.servicios__main__titulo2 {
     h2 {
     margin-top: 30px;
     margin-bottom: 10px;
+    color: #753867;
+    font-weight: bold;
     }
 
     p {
         margin-top: 5px;
         margin-bottom: 20px;
         text-align: justify;
+        color: #753867;
     }
 }
 
@@ -441,11 +467,21 @@ footer {
         width: 15%;
         text-align: center;
     }
+    h3 {
+        color: #753867;
+        font-weight: bold;
+    }
+    p {
+        color: #753867;
+    }
 }
 
 .servicios__lista {
     list-style: none;
 }
+
+
+/**********************************/
 
 @media (min-width: 770px) {
     .header__secundario  {
